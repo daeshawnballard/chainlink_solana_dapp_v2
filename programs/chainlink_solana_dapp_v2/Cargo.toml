@@ -17,3 +17,4 @@ default = []
 
 [dependencies]
 anchor-lang = "0.24.2"
+chainlink_solana = "0.1.0"
