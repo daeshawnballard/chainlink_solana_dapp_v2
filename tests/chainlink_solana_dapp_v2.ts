@@ -3,7 +3,7 @@ import * as anchor from "@project-serum/anchor";
 const CHAINLINK_FEED = "HgTtcbcmp5BeThax5AU8vg4VwK79qAvAKKFMs8txMLW6";
 const CHAINLINK_PROGRAM_ID = "CaH12fwNTKJAG8PxEvo9R96Zc2j8qNHZaFj8ZW49yZNT";
 describe("chainlink_solana_dapp_v2", () => {
-  const provider = anchor.Provider.env();
+  const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
   const program = anchor.workspace.ChainlinkSolanaDapp
   it('Queries SOL/USD Price Feed', async() => { 
