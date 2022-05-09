@@ -1,7 +1,7 @@
 import * as anchor from "@project-serum/anchor";
 
 const CHAINLINK_FEED = "HgTtcbcmp5BeThax5AU8vg4VwK79qAvAKKFMs8txMLW6";
-const CHAINLINK_PROGRAM_ID = "CaH12fwNTKJAG8PxEvo9R96Zc2j8qNHZaFj8ZW49yZNT";
+const CHAINLINK_PROGRAM_ID = "HEvSKofvBgfaexv23kMabbYqxasxU3mQ4ibBMEmJWHny";
 describe("chainlink_solana_dapp_v2", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
