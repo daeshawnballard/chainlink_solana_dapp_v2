@@ -6,7 +6,7 @@ let provider = anchor.AnchorProvider.env();
 anchor.setProvider(anchor.AnchorProvider.env());
 
 const CHAINLINK_FEED = "HgTtcbcmp5BeThax5AU8vg4VwK79qAvAKKFMs8txMLW6";
-const CHAINLINK_PROGRAM_ID = "31xNV613uNqutXFi35nCCbGuDUbr7p26SMJZoJFLKrAk";
+const CHAINLINK_PROGRAM_ID = "HEvSKofvBgfaexv23kMabbYqxasxU3mQ4ibBMEmJWHny";
 
  describe("chainlink_solana_dapp_v2", () => {
   const program = anchor.workspace.ChainlinkSolanaDappV2 as Program<ChainlinkSolanaDappV2>;
@@ -27,7 +27,7 @@ const CHAINLINK_PROGRAM_ID = "31xNV613uNqutXFi35nCCbGuDUbr7p26SMJZoJFLKrAk";
       console.log(tx)
     const latestPrice = await program.account.resultAccount.fetch(resultAccount.publicKey)
     //dividing into the units that will give us usd
-    console.log("Price is: " + latestPrice.value / 1e9)
+    console.log("Price is: " + latestPrice.value / 1e8)
   });
 });
 
